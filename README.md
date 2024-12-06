@@ -24,8 +24,9 @@ cd <Terraformリポジトリのディレクトリ>
 ln -s <テンプレートリポジトリのディレクトリ>/terraform-pre-commit/.pre-commit-config.yaml ./.pre-commit-config.yaml
 ```
 
-Terraformリポジトリ側では、.gitignoreでシンボリックリンクを追跡対象外とする。(各ユーザー毎に異なるため、差分が発生する)
+Terraformリポジトリ側では、.gitignoreで`.pre-commit-config.yaml`シンボリックリンクを追跡対象外とする。(各ユーザー毎に異なるため、差分が発生する)
 
-```bash: gitignore
+```bash
+# gitignore
 pre-commit-config.yaml
 ```
